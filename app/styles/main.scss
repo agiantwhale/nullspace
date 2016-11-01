@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700');
+
+$headings-color: white;
+$font-family-monospace: 'Ubuntu Mono', monospace;
+$font-family-base: $font-family-monospace;
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  padding: 120px 0;
+  background-color: black;
+
+  .nullspace {
+    overflow: hidden;
+    white-space: nowrap;
+
+    span {
+      color: #fb9fb1;
+    }
+  }
+
+  .subheading {
+    @extend .text-left;
+
+    .names {
+      padding: 0;
+      border-color: white;
+      border-style: solid;
+    }
+
+    @media(max-width: $screen-xs-max){
+      text-align: center;
+      margin-bottom: 75px;
+
+      .names {
+        width: 220px;
+        margin-bottom: 90px;
+      }
+    }
+    @media(min-width: $screen-tablet){
+      padding-left: 10px;
+      .names {
+        width: 165px;
+      }
+    }
+    @media(min-width: $screen-desktop){
+      padding-left: 60px;
+    }
+    @media(min-width: $screen-lg-desktop){
+      padding-left: 240px;
+    }
+  }
+
+  .title {
+    @extend .text-left;
+
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+
+    @media(max-width: $screen-xs-max){
+      text-align: center;
+      font-size: 70px;
+      margin-bottom: 120px;
+    }
+    @media(min-width: $screen-tablet){
+      padding-left: 10px;
+      margin-bottom: 32px;
+      line-height: 0.3;
+      font-size: 160px;
+    }
+    @media(min-width: $screen-desktop){
+      padding-left: 60px;
+    }
+    @media(min-width: $screen-lg-desktop){
+      padding-left: 240px;
+    }
+  }
+
+  h1, h3, h4 {
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+
+  .error {
+    @extend .text-center;
+    margin-top: 120px;
+  }
+}
