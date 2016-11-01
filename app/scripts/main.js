@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  $(".photos img").unveil();
+  $('.photos img').unveil();
 });

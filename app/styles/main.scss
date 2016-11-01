@@ -25,8 +25,12 @@ html, body {
   position: relative;
   width: 100%;
   padding: 120px 0;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   background-color: black;
+
+  @media(min-width: $screen-tablet){
+    margin-bottom: 60px;
+  }
 
   .nullspace {
     overflow: hidden;
@@ -110,8 +114,12 @@ html, body {
 .photos {
   img {
     @extend .center-block;
-    max-width: 640px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+
+    @media(min-width: $screen-tablet){
+      max-width: 640px;
+      margin-bottom: 60px;
+    }
   }
 }
 
