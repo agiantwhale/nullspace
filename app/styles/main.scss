@@ -31,6 +31,16 @@ html, body {
   @media(min-width: $screen-tablet){
     margin-bottom: 60px;
   }
+
+  img {
+    @extend .img-responsive;
+    @extend .center-block;
+    max-width: 320px;
+
+    @media(min-width: $screen-tablet){
+      max-width: 420px;
+    }
+  }
 }
 
 .photos {
