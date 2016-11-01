@@ -31,43 +31,6 @@ html, body {
   @media(min-width: $screen-tablet){
     margin-bottom: 60px;
   }
-
-  .nullspace {
-    position: relative;
-
-    @media(min-width: $screen-tablet){
-      margin-top: 130px;
-    }
-
-    .logo {
-      @extend .hidden-xs;
-      position: absolute;
-      width: 414px;
-      bottom: 2px;
-
-      @media(min-width: $screen-tablet){
-        margin-left: 120px;
-      }
-
-      @media(min-width: $screen-lg-desktop) {
-        margin-left: 320px;
-      }
-    }
-
-    h4 {
-      color: rgb(160,160,160);
-      overflow: hidden;
-      white-space: nowrap;
-      padding: 0;
-      margin: 0;
-      line-height: 1;
-      font-style: italic;
-
-      span {
-        color: #fb9fb1;
-      }
-    }
-  }
 }
 
 .photos {
