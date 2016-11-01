@@ -42,8 +42,8 @@ html, body {
     .logo {
       @extend .hidden-xs;
       position: absolute;
-      width: 450px;
-      bottom: 4px;
+      width: 414px;
+      bottom: 2px;
 
       @media(min-width: $screen-tablet){
         margin-left: 120px;
@@ -54,12 +54,14 @@ html, body {
       }
     }
 
-    h3 {
+    h4 {
+      color: rgb(160,160,160);
       overflow: hidden;
       white-space: nowrap;
       padding: 0;
       margin: 0;
       line-height: 1;
+      font-style: italic;
 
       span {
         color: #fb9fb1;
