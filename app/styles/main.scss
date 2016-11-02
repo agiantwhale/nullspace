@@ -60,6 +60,7 @@ html, body {
   color: white;
 
   p {
+    @extend .text-center;
     padding: 20px;
     margin: 0;
 
