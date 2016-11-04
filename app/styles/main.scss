@@ -25,12 +25,12 @@ html, body {
   position: relative;
   width: 100%;
   padding: 120px 0;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   background-color: black;
 
-  @media(min-width: $screen-tablet){
-    margin-bottom: 60px;
-  }
+  // @media(min-width: $screen-tablet){
+  //   margin-bottom: 60px;
+  // }
 
   img {
     @extend .img-responsive;
@@ -41,9 +41,35 @@ html, body {
       max-width: 420px;
     }
   }
+
+  h3 {
+    @extend .text-center;
+  }
 }
 
 .photos {
+
+  .text {
+    background-color: black;
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+
+    p {
+      @extend .text-center;
+      @extend .center-block;
+      padding: 20px;
+
+      @media(min-width: $screen-tablet){
+        max-width: 640px;
+      }
+    }
+
+    @media(min-width: $screen-tablet){
+      margin-bottom: 60px;
+    }
+  }
+
   img {
     @extend .center-block;
     margin-bottom: 20px;
