@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i');
 
 $headings-color: white;
 $font-family-monospace: 'Ubuntu Mono', monospace;
@@ -48,7 +48,6 @@ html, body {
 }
 
 .photos {
-
   .text {
     background-color: black;
     color: white;
@@ -62,6 +61,7 @@ html, body {
 
       @media(min-width: $screen-tablet){
         max-width: 640px;
+        font-size: 16px;
       }
     }
 
